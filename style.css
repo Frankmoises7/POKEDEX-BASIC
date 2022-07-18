@@ -13,10 +13,13 @@ form .input {
   font-size: x-large;
   border: 5px solid black;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 form .submit {
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
   padding: 1em;
   margin: 0;
   border: none;
@@ -65,6 +68,7 @@ form .submit {
 }
 
 .poke-name {
+  margin-top: 20px;
   font-size: x-large;
 }
 .poke-stats div {
