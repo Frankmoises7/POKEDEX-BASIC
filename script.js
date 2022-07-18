@@ -53,7 +53,7 @@ const renderPokemonData = data => {
     renderPokemonStats(stats);
 }
 
-
+//Settear el color del fondo del pokemon
 const setCardColor = types => {
     const colorOne = typeColors[types[0].type.name];
     const colorTwo = types[1] ? typeColors[types[1].type.name] : typeColors.default;
@@ -61,16 +61,19 @@ const setCardColor = types => {
     pokeImg.style.backgroundSize = ' 5px 5px';
 }
 
+//settear el color del tipo 
 const renderPokemonTypes = types => {
     pokeTypes.innerHTML = '';
     types.forEach(type => {
         const typeTextElement = document.createElement("div");
-        typeTextElement.style.color = typeColors[type.type.name];
+        typeTextElement.style.color = 'white';
+        typeTextElement.style.background = typeColors[type.type.name];
         typeTextElement.textContent = type.type.name;
         pokeTypes.appendChild(typeTextElement);
     });
 }
 
+//Renderizar los stats
 const renderPokemonStats = stats => {
     pokeStats.innerHTML = '';
     stats.forEach(stat => {
@@ -85,6 +88,7 @@ const renderPokemonStats = stats => {
     });
 }
 
+//Renderizar no encontrado
 const renderNotFound = () => {
     pokeName.textContent = 'No encontrado';
     pokeImg.setAttribute('src', 'poke-shadow.png');
