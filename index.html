@@ -7,14 +7,18 @@
     <title>Pokedex</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="./script.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/b9b867f88c.js" crossorigin="anonymous"></script>
     <link href="./style.css" rel="stylesheet" />
 </head>
 <body>
     
     <div data-poke-card class="poke-card">
-      <h2>Ingresa el nombre de un pokemon</h2>
+      <h2>Ingresa el nombre de un Pokemon</h2>
       <form action="" onsubmit="searchPokemon(event)">
         <input type="text" name="pokemon" class="input" autocomplete="off">
+        <button type="submit" class="submit"> 
+          <i class="fas fa-search"></i>
+        </button>
       </form>
         <div data-poke-name class="poke-name">Pokedex</div>
         <div data-poke-img-container class="img-container">

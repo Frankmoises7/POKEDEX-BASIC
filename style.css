@@ -1,3 +1,6 @@
+body {
+  background-color: red;
+}
 
 h1 {
   font-family: 'Roboto Mono', monospace;
@@ -13,9 +16,19 @@ form .input {
   margin-bottom: 20px;
 }
 
-body {
-  background-color: red;
+form .submit {
+  padding: 1em;
+  margin: 0;
+  border: none;
+  border-radius:50% ;
+  outline: none;
+  color: white;
+  background: rgb(0, 109, 204);
+  cursor: pointer;
 }
+
+
+
 
 .poke-card {
   position: relative;
